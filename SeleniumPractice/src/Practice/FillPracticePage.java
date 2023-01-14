@@ -1,12 +1,14 @@
 package Practice;
 
 import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import BrowserConnection.Connector;
 
 public class FillPracticePage {
@@ -41,10 +43,25 @@ public class FillPracticePage {
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().dismiss();
 
-		
-		System.out.println("****End****");
+		// Suggestion Class Example: get Country
+		driver.findElement(By.id("autocomplete")).sendKeys("ind");
 
-		// driver.close();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ui-menu-item-wrapper']")));
+
+		List<WebElement> AllCountry = driver.findElements(By.xpath("//div[@class='ui-menu-item-wrapper']"));
+		String s = "India";
+		for (WebElement Country : AllCountry) {
+			if (Country.getText().equals(s)) {
+				Country.click();
+				break;
+			}
+
+		}
+
+		
+		System.out.println("****End****  \n Test run fine");
+
+		driver.close();
 
 	}
 
