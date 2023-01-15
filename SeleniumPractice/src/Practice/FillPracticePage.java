@@ -1,11 +1,14 @@
 package Practice;
 
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -57,11 +60,78 @@ public class FillPracticePage {
 			}
 
 		}
+		// Switch Window Example
+		SwitchWindowExample(driver);
+		// Switch Tab Example
+		SwitchTabExample(driver);
+		// Mouse Hover Example
+		MouseHoverExample(driver);
+		//iFrame Example
+		iFrameExample(driver);
 
-		
 		System.out.println("****End****  \n Test run fine");
 
 		driver.close();
+
+	}
+
+	public static void iFrameExample(WebDriver driver) {
+		// TODO Auto-generated method stub
+		System.out.println("iFrameExample");
+		System.out.println(driver.findElements(By.xpath("//div")).size());
+		//driver.switchTo().frame(0);
+		driver.switchTo().frame(driver.findElement(By.id("courses-iframe")));
+		System.out.println(driver.findElements(By.xpath("//div")).size());
+		List<WebElement> list = driver.findElements(By.xpath("//div"));
+		for(WebElement li:list) {
+			if(li.getText().length()<=5)
+			System.out.println(li.getText());
+		}
+		driver.switchTo().defaultContent();
+		System.out.println(driver.findElements(By.xpath("//div")).size());
+		
+	}
+
+	public static void MouseHoverExample(WebDriver driver) {
+		// TODO Auto-generated method stub
+		driver.manage().window().maximize();
+		Actions act = new Actions(driver);
+
+		act.scrollToElement(driver.findElement(By.xpath("/html/body/div[4]/div"))).build().perform();
+		act.moveToElement(driver.findElement(By.id("mousehover"))).build().perform();
+		return;
+
+	}
+
+	public static void SwitchTabExample(WebDriver driver) {
+		// TODO Auto-generated method stub
+		driver.findElement(By.id("opentab")).click();
+		Set<String> windowHandles = driver.getWindowHandles();
+		Iterator<String> iterator = windowHandles.iterator();
+		String parentId = iterator.next();
+		driver.switchTo().window(iterator.next());
+		System.out.println(
+				driver.findElement(By.cssSelector("#carousel-example-generic > div > div > div > div > h2 > span"))
+						.getText());
+		String s = driver.findElement(By.cssSelector("#carousel-example-generic > div > div > div > div > h2 > span"))
+				.getText();
+		System.out.println(s.split(" ")[1]);
+		driver.close();
+		driver.switchTo().window(parentId);
+		return;
+	}
+
+	public static void SwitchWindowExample(WebDriver driver) {
+		// TODO Auto-generated method stub
+		driver.findElement(By.id("openwindow")).click();
+		Set<String> windowHandles = driver.getWindowHandles();
+		Iterator<String> iterator = windowHandles.iterator();
+		String parentId = iterator.next();
+		driver.switchTo().window(iterator.next());
+
+		driver.close();
+		driver.switchTo().window(parentId);
+		return;
 
 	}
 

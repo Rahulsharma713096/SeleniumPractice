@@ -12,9 +12,7 @@ public class Assignment5FramesAssignmentMentor {
 
 		driver.get("https://the-internet.herokuapp.com/");
 		driver.findElement(By.linkText("Nested Frames")).click();
-
 		driver.switchTo().frame("frame-top");
-
 		driver.switchTo().frame("frame-middle");
 
 		System.out.println(driver.findElement(By.id("content")).getText());
