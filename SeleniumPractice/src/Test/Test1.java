@@ -3,14 +3,15 @@ package Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 import BrowserConnection.Connector;
 import ScreenShotAndLogs.LogsText;
 import ScreenShotAndLogs.ScreenShots;
 
 public class Test1 {
-	@org.testng.annotations.Test
-	public static void Test() {
+	@Test
+	public static void getTest() {
 		// TODO Auto-generated method stub
 		WebDriver driver = Connector.getChromeConnection();
 
