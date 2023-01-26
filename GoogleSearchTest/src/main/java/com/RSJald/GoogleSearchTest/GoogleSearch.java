@@ -14,6 +14,7 @@ import driverconnection.ConnectionBrowser;
 
 public class GoogleSearch {
 	public WebDriver getSearch(String value) {
+		System.out.println("Search value ="+value);
 		WebDriver driver = null;
 		try {
 			driver = new ConnectionBrowser().getConnection();

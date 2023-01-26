@@ -28,18 +28,14 @@ Skip to main content
  >
  >
  >
- >Selenium Tutorial
-Guru99
-·
+ >Selenium Tutorial - Guru99
 https://www.guru99.com › selenium-tutorial
  >Selenium
  >Locators in Selenium
  >What is Selenium WebDriver?
  >Selenium Grid
- >Selenium Tutorial
-Javatpoint
-·
-https://www.javatpoint.com › selenium-tuto...
+ >Selenium Tutorial - Javatpoint
+https://www.javatpoint.com › selenium-tutorial
  >Selenium WebDriver
  >Selenium Python
  >Selenium IDE
@@ -198,35 +194,23 @@ YouTube · Simplilearn
  >
  >
  >View all
- >Selenium Tutorial
-Tutorialspoint
-·
+ >Selenium Tutorial - Tutorialspoint
 https://www.tutorialspoint.com › selenium
- >Selenium Tutorial—Selenium WebDriver Using Python
-Intellipaat
-·
+ >Selenium Tutorial for Beginners: Selenium WebDriver & Testing
 https://intellipaat.com › Blog › Tutorials
  >Testing Courses
  >Testing Courses
  >Testing Courses
- >Selenium Tutorial - Beginner to Advanced
-ArtOfTesting
-·
-https://artoftesting.com › ... › Selenium
- >Learn Selenium Basics for Beginners Training
-Simplilearn
-·
-https://www.simplilearn.com › ... › DevOps
+ >Selenium Tutorial - Beginner to Advanced | ArtOfTesting
+https://artoftesting.com › Automation Testing › Selenium
+ >Learn Selenium Basics for Beginners Training - Simplilearn
+https://www.simplilearn.com › Home › DevOps
  >Selenium Automation Testing: Step by Step Guide for 2023
-https://www.simplilearn.com › tutorials › s...
- >Selenium WebDriver Tutorials | For Beginners
-Tools QA
-·
+https://www.simplilearn.com › ... › Selenium Tutorial
+ >Selenium WebDriver Tutorials | For Beginners - Tools QA
 https://www.toolsqa.com › selenium-tutorial
  >Free Selenium Tutorial | Beginner To Advanced Level
-Software Testing Material
-·
-https://www.softwaretestingmaterial.com
+https://www.softwaretestingmaterial.com › Selenium
  >
  >Selenium
  >TestNG

@@ -18,6 +18,7 @@ public class AppTest {
 		String value = new GoogleSearch().getAllWebLink(driver);
 		LogsText.CreateLogFile(value);
 		new ConnectionBrowser().quitDriver(driver);
+		System.out.println("searchResult1");
 
 	}
 
@@ -28,6 +29,7 @@ public class AppTest {
 		String value = new GoogleSearch().getAllWebLink(driver);
 		LogsText.CreateLogFile(value);
 		new ConnectionBrowser().quitDriver(driver);
+		System.out.println("searchResult1");
 
 	}
 
@@ -38,5 +40,7 @@ public class AppTest {
 		String value = new GoogleSearch().getAllWebLink(driver);
 		LogsText.CreateLogFile(value);
 		new ConnectionBrowser().quitDriver(driver);
+		System.out.println("searchResult1");
+
 	}
 }

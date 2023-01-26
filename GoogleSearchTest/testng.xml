@@ -16,7 +16,7 @@
   <test thread-count="5" name="Test2">
     <classes>
    <class name ="com.RSJald.GoogleSearchTest.AppTest">
-   <methods> <include name ="searchResult*"/></methods>
+   <methods> <include name ="searchResult3"/></methods>
    </class>
     </classes>
   </test> <!-- Test -->
