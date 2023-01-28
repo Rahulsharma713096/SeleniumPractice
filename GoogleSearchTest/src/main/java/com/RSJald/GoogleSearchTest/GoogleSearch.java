@@ -41,7 +41,6 @@ public class GoogleSearch {
 		List<String> collect = listOfSearch.stream().map(WebElement::getText).collect(Collectors.toList());
 		data += String.join("\n >", collect);
 		return data;
-
 	}
 
 }
